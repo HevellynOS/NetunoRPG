@@ -1,0 +1,338 @@
+@font-face{
+    font-family: 'harngton';
+    src: url('assets/fonts/HARNGTON.TTF') format('truetype');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-form:#fae8b7ce; 
+    --background-customize-character:#ffffff;
+    --background-:#fae8b7ce; 
+    --input: #8C3214;
+    --input-focus: #e48e72;
+    --btn: rgb(91, 66, 114);
+    --btn-hover: rgb(48, 15, 78);
+    --light: rgb(221, 214, 214);
+    --dourado: rgba(255, 215, 0, 1);
+    --marrom: rgb(39, 16, 1);
+    --marrom-light: rgb(190, 145, 114);
+    --dark: black;
+    --red: rgb(160, 10, 10);
+    --purple: rgb(78, 10, 78);
+    --select: rgb(216, 125, 125);
+}
+
+body{
+ 
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--marrom);
+    padding: 30px;
+    box-shadow: inset 5px -20px 10px black;
+
+}
+
+
+.logo{
+    text-shadow: 1px 1px 3px var(--dourado);
+    letter-spacing: 0.3rem;
+    color: var(--light);
+    font-family: 'harngton', sans-serif;
+    background-color: var(--red);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 10px var(--dourado);
+}
+.logo:hover{
+    background-color: var(--dourado);
+    color: var(--dark);
+    transition: 2s;
+    cursor: pointer;
+}
+.menu{
+
+    font: 500 2rem 'harngton';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    
+
+}
+.menu-items{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  
+}
+a {
+
+    text-decoration: none;
+    color: var(--light);
+
+}
+
+a:hover {
+    color: var(--dourado);
+    transition: 1s;
+
+}
+
+#form{
+    font: 600 2.5rem 'harngton';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-form);
+    background-blend-mode: color-dodge;
+    width: 800px;
+    justify-content: center;
+    opacity: 1;
+    padding: 30px;
+
+}
+input{
+    font-size: 1.2rem;
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--input);
+    color: var(--light);
+  
+ 
+}
+input::placeholder{
+    color: var(--light);
+  
+ 
+}
+
+
+input:focus{
+    background-color:var(--input-focus);
+    transition: 1s;
+
+  
+}
+
+#section-register-form{
+    display: flex;
+    background-image: url(assets/images/background_form.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 15vh);
+
+}
+#section-register-form > div{
+    color: white;   
+    text-align: center;
+    font:700 2rem 'roboto';    
+    background-color: #8c3214bb;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+}
+#section-register-form > div > h2{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+#section-register-form > div > h2:hover{
+    color: var(--purple);
+    
+}
+#section-register-form > div > p > strong{
+    color: var(--dourado);
+}
+
+.btn{
+    font: 500 2rem 'harngton';
+    width: 200px;
+    margin-top: 30px;
+    height: 5vh;
+    background-color: var(--btn);
+    color: var(--light);
+    border-radius: 30px;  
+    border: none;
+    box-shadow: 3px 3px 5px var(--dark);
+
+}
+.btn:hover{
+    background-color: var(--btn-hover);
+    transition: 2s;
+    text-decoration: line-through;
+    cursor: pointer;
+
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-img{
+    width: 100px;
+    border-radius: 100%;
+    border: solid var(--light);
+    opacity: 0.7;
+}
+.perfil{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.perfil > figcaption{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px var(--light);
+    color: var(--dourado);
+    position: absolute;
+    top: 90px;
+    font-family: 'harngton', sans-serif;
+    font-weight: 800;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: var(--marrom);
+    box-shadow: inset 10px 10px 10px black;
+    color: white;
+    font-size: 2rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    gap: 30px;
+    font-size: 1.5rem;
+ 
+}
+.intro > h1{
+    font-size: 2rem;
+    background-color: var(--purple);
+    width: 100%;
+    text-align: center;
+    color: var(--light);
+    font-family: 'harngton', sans-serif ;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.intro > h1:hover{
+    color: var(--red);
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+/*cards*/
+#home-page{
+    background-color: var(--background);
+}
+#section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-img{
+    width: 300px;
+}
+
+#cards-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+
+}
+#table-cards{
+    background-color: var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: solid 10px var(--red);
+     box-shadow: 5px 5px 5px rgba(59, 4, 4, 0.801);
+     border-radius: 10px;
+     color: var(--light);
+
+    
+}
+.cards-img:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 1s;
+
+
+}
+#table-cards th, td{
+    border: solid 2px rgba(160, 12, 12, 0.445);
+    
+}
+#cards-class{
+    padding: 30px;
+    color: var(--light);
+    background-image: linear-gradient(to top, var(--marrom-light), var(--marrom));
+
+}
+#cards-class> h2{
+    font-size: 2.5rem;
+    font-family: 'harngton', sans-serif;
+    
+}
+#cards-class> p{
+    font-size: 1.5rem;
+    
+}
+/*section-customize-character*/
+
+#section-customize-character{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-customize-character);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+figure > img {
+    width: 200px;
+    height: 200px;
+}
+.img-choose-eyes{
+    width: 600px;
+    height: 500px;
+}
+
+select {
+    width: 400px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    color: var(--red);
+    background-color: var(--select);
+}

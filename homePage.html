@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netuno RPG</title>
+</head>
+<body id="home-page">
+    <header class="topbar">
+        <h1 class="logo"><a href="homePage.html">Netuno RPG</a></h1>
+        <nav class="menu">
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="registerForm.html">Register</a></li>
+                <li><a href="loginForm.html">Login</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <figure class="perfil">
+            <img class="perfil-img" src="assets/images/perfil.jpg" alt="">
+            <figcaption>NAMEE</figcaption>
+        </figure>
+    </header>
+    <main>
+        <section id="section-cards">
+            <div class="intro">
+                <h1>Bem-vindo ao Reino Mágico de Netuno!</h1>
+                <p> Aqui, você se tornará um herói em sua própria jornada épica. Explore terras encantadas, descubra segredos ancestrais e lute contra as forças das trevas que ameaçam nosso mundo.</p>
+            </div>
+            <article id="cards-class">
+                <h2>Classes Para Jogar: </h2>
+                <p>Selecione uma classe para começarmos o jogo</p>
+                <table id="table-cards">
+                    <thead>
+                        <tr>
+                            <th><h3>Paladino</h3></th>
+                            <th><h3>Atirador</h3></th>
+                            <th><h3>Guerreiro</h3></th>
+                            <th><h3>Bárbaro</h3></th>
+                            <th><h3>Arqueiro</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="card">
+                                <img class="cards-img" src="assets/images/paladino.jpg" alt="paladino">
+                            
+                            </td>
+                            <td class="card">
+                                <img class="cards-img" src="assets/images/atirador.jpg" alt="atirador">
+    
+                            </td>
+                            <td class="card">
+                                <img class="cards-img" src="assets/images/guerreiro.jpg" alt="guerreiro">
+        
+                            </td>
+                            <td class="card">
+                                <img class="cards-img" src="assets/images/barbaro.jpg" alt="barbaro">
+                            </td>
+                            <td class="card">
+                                <img class="cards-img" src="assets/images/arqueiro.jpg" alt="arqueiro">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>HP ------- Power ------ Weapon</td>
+                            <td>HP ------- Power ------ Weapon</td>
+                            <td>HP ------- Power ------ Weapon</td>
+                            <td>HP ------- Power ------ Weapon</td>
+                            <td>HP ------- Power ------ Weapon</td>
+                        </tr>
+                        <tr>
+                            <td>500 ------ 700 ----- Lança e Escudo</td>
+                            <td>200 ------ 1200 ----- Arma</td>
+                            <td>500 ------ 800 ----- Espada e Escudo</td>
+                            <td>700 ------ 900 ----- Machado ou Marreta</td>
+                            <td>400 ------ 1000 ----- Arco</td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn-class">Confirmar Classe Paladino</button></td>
+                            <td><button class="btn-class">Confirmar Classe Atirador</button></td>
+                            <td><button class="btn-class">Confirmar Classe Guerreiro</button></td>
+                            <td><button class="btn-class">Confirmar Classe Barbaro</button></td>
+                            <td><button class="btn-class">Confirmar Classe Arqueiro</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </article>
+        </section>
+        <section id="section-customize-character">
+            <h1>Personalização</h1>
+            <p>Aqui você pode personalizar as caracteristicas fisicas do seu personagem</p>
+                <figure>
+                    <img src="assets/images/hair-red.jpg" id="hair-red" alt="hair red">
+                    <img src="assets/images/hair-white.jpg" id="hair-white" alt="hair white">
+                    <img src="assets/images/hair_green.jpg" id="hair-green" alt=" hair green">
+                 <figcaption>Aqui estão alguns estilos de cabelos que podem ser escolhidos</figcaption>claro
+                </figure>
+                <div class="eyesSelect">
+                    <figure>
+                        <img class="img-choose-eyes" src="assets/images/eyes.jpg" alt="">
+                        <figcaption>Aqui estão alguns estilos de olhos que podem ser escolhidos</figcaption>
+                    </figure>
+                    <select name="eyeColor" id="eyeColor">
+                        <option value="red">Olhos Vermelhos</option>
+                        <option value="blue">Olhos Azuis</option>
+                        <option value="green">Olhos Verde</option>
+                        <option value="hazel">Olhos Castanhos Claros</option>
+                    </select>
+                </div>
+                <select name="skinColor" id="skinColor">
+                    <option value="white">Branco</option>
+                    <option value="black">Negro</option>
+                    <option value="brown">Pardo</option>
+                </select>
+            
+                <select name="weaponsAvailable" id="weaponsAvailable"></select>
+                <span>As armas disponiveis só serão exibidas apos a seleção da classe</span>
+                    <!-- adicionado via javascript, depende da classe escolhida pelo usuario  -->
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Hevellyn Oshiro</p>
+    </footer>
+</body>
+</html>
