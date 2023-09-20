@@ -29,6 +29,7 @@
 body{
  
     font-family: 'roboto', sans-serif;
+   
     
 }
 
@@ -380,4 +381,25 @@ select{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#section-character-choosed{
+    width: 80%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--dark);
+}
+
+#choosed{
+    color: var(--light);
+    font: 500 2rem 'harngton';
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

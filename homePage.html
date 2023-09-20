@@ -89,11 +89,11 @@
                         </tr>
                         
                         <tr>
-                            <td><button class="btn-class">Paladino</button></td>
-                            <td><button class="btn-class">Atirador</button></td>
-                            <td><button class="btn-class">Guerreiro</button></td>
-                            <td><button class="btn-class">Barbaro</button></td>
-                            <td><button class="btn-class">Arqueiro</button></td>
+                            <td><button class="btn-class" data-class="Paladino">Paladino</button></td>
+                            <td><button class="btn-class" data-class="Atirador">Atirador</button></td>
+                            <td><button class="btn-class" data-class="Guerreiro">Guerreiro</button></td>
+                            <td><button class="btn-class" data-class="Barbaro">Barbaro</button></td>
+                            <td><button class="btn-class" data-class="Arqueiro">Arqueiro</button></td>
                         </tr>
                     </tfoot>
                     
@@ -105,9 +105,9 @@
             <h1>Personalização</h1>
             <p>Aqui você pode personalizar as caracteristicas fisicas do seu personagem</p>
                 <figure id="hairColor">
-                    <img src="assets/images/hair-red.jpg" id="hair-red" alt="hair red">
-                    <img src="assets/images/hair-white.jpg" id="hair-white" alt="hair white">
-                    <img src="assets/images/hair_green.jpg" id="hair-green" alt=" hair green">
+                    <img src="assets/images/hair-red.jpg" id="hair-red" alt="Cabelo Vermelho">
+                    <img src="assets/images/hair-white.jpg" id="hair-white" alt="Cabelo Branco">
+                    <img src="assets/images/hair_green.jpg" id="hair-green" alt="Cabelo Verde">
                  <figcaption>Aqui estão alguns estilos de cabelos que podem ser escolhidos</figcaption>
                 </figure>
                 <div class="eyesSelect">
@@ -146,12 +146,17 @@
                 </div>
                 <button type="button" onclick="handleClickShowInfos(event)">Finalizar</button>
             </section>
+
+            <section id="section-character-choosed">
+                <h1>Aqui aparecerá os Dados do seu personagem</h1>
+                <div id="choosed"></div>
+            </section>
     </main>
+
     <footer>
         <p>desenvolvido por Hevellyn Oshiro</p>
     </footer>
 </body>
 
     <script src="homePage.js"></script>
-    <script src="showInfos.js"></script>
 </html>
