@@ -23,7 +23,7 @@
     --dark: black;
     --red: rgb(160, 10, 10);
     --purple: rgb(78, 10, 78);
-    --select: rgb(216, 125, 125);
+    --select: rgb(244, 211, 211);
 }
 
 body{
@@ -62,6 +62,7 @@ body{
     transition: 2s;
     cursor: pointer;
 }
+
 .menu{
 
     font: 500 2rem 'harngton';
@@ -92,6 +93,7 @@ a:hover {
 }
 
 #form{
+
     font: 600 2.5rem 'harngton';
     display: flex;
     flex-direction: column;
@@ -188,6 +190,7 @@ input:focus{
 
 .perfil-img{
     width: 100px;
+    height: 150px ;
     border-radius: 100%;
     border: solid var(--light);
     opacity: 0.7;
@@ -257,7 +260,7 @@ footer{
 }
 
 .cards-img{
-    width: 300px;
+    width: 200px;
 }
 
 #cards-class{
@@ -265,8 +268,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 30px;
+
 
 }
 #table-cards{
@@ -274,10 +276,9 @@ footer{
     padding: 30px;
     margin-bottom: 30px;
     text-align: center;
-    border: solid 10px var(--red);
-     box-shadow: 5px 5px 5px rgba(59, 4, 4, 0.801);
-     border-radius: 10px;
-     color: var(--light);
+    box-shadow: 5px 5px 5px rgba(59, 4, 4, 0.801);
+    border-radius: 10px;
+    color: var(--light);
 
     
 }
@@ -310,6 +311,7 @@ footer{
 /*section-customize-character*/
 
 #section-customize-character{
+    margin: 30px;
     display: flex;
     flex-direction: column;
     background-color: var(--background-customize-character);
@@ -319,20 +321,63 @@ footer{
     width: 100%;
     height: auto;
 }
-figure > img {
+h1{
+    font: 800 2rem 'harngton';
+    background-color: var(--red);
+    width: 500px;
+    color: var(--dourado);
+    padding: 10px;
+    margin-bottom: 30px;
+
+}
+#section-customize-character p{
+    font-size: 1.2rem;
+    margin: 30px;
+}
+h1:hover{
+    color: var(--purple);
+    transition: 1s;
+
+}
+#hairColor {
+    background-color: var(--purple);
+    border-radius: 30px;
+    color: var(--light);
+    box-shadow: inset 10px 10px 10px var(--light);
+    padding: 50px;
+}
+#hairColor > img {
     width: 200px;
     height: 200px;
+}
+#hairColor > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+figcaption{
+    font: 400 1.3 'arial';
+    margin-top: 20px;
 }
 .img-choose-eyes{
     width: 600px;
     height: 500px;
 }
 
-select {
-    width: 400px;
-    border-radius: 30px;
-    border: none;
+select{
+    width: 300px;
     height: 30px;
-    color: var(--red);
-    background-color: var(--select);
+    padding-left: 10px;
+    margin: 30px;
+    background-color: var(--dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--dourado);
+    font: 500 1.1rem 'harngton';
+}
+
+.weaponsSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

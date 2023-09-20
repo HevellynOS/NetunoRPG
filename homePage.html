@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Netuno RPG</title>
 </head>
-<body id="home-page">
+<body id="home-page" onsubmit="">
     <header class="topbar">
         <h1 class="logo"><a href="homePage.html">Netuno RPG</a></h1>
         <nav class="menu">
@@ -22,7 +22,7 @@
         </nav>
         <figure class="perfil">
             <img class="perfil-img" src="assets/images/perfil.jpg" alt="">
-            <figcaption>NAMEE</figcaption>
+            <figcaption>NAME</figcaption>
         </figure>
     </header>
     <main>
@@ -48,7 +48,6 @@
                         <tr>
                             <td class="card">
                                 <img class="cards-img" src="assets/images/paladino.jpg" alt="paladino">
-                            
                             </td>
                             <td class="card">
                                 <img class="cards-img" src="assets/images/atirador.jpg" alt="atirador">
@@ -68,27 +67,36 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td>HP ------- Power ------ Weapon</td>
-                            <td>HP ------- Power ------ Weapon</td>
-                            <td>HP ------- Power ------ Weapon</td>
-                            <td>HP ------- Power ------ Weapon</td>
-                            <td>HP ------- Power ------ Weapon</td>
+                            <td>HP: 630</td>
+                            <td>HP: 450</td>
+                            <td>HP: 770</td>
+                            <td>HP: 800</td>
+                            <td>HP: 500</td>
                         </tr>
                         <tr>
-                            <td>500 ------ 700 ----- Lança e Escudo</td>
-                            <td>200 ------ 1200 ----- Arma</td>
-                            <td>500 ------ 800 ----- Espada e Escudo</td>
-                            <td>700 ------ 900 ----- Machado ou Marreta</td>
-                            <td>400 ------ 1000 ----- Arco</td>
+                            <td>Mana: 50</td>
+                            <td>Mana: 25</td>
+                            <td>Mana: 30</td>
+                            <td>Mana: 15</td>
+                            <td>Mana: 35</td>
                         </tr>
                         <tr>
-                            <td><button class="btn-class">Confirmar Classe Paladino</button></td>
-                            <td><button class="btn-class">Confirmar Classe Atirador</button></td>
-                            <td><button class="btn-class">Confirmar Classe Guerreiro</button></td>
-                            <td><button class="btn-class">Confirmar Classe Barbaro</button></td>
-                            <td><button class="btn-class">Confirmar Classe Arqueiro</button></td>
+                            <td>POWER: 540 </td>
+                            <td>POWER:  800</td>
+                            <td>POWER:  650</td>
+                            <td>POWER: 450</td>
+                            <td>POWER:  630</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><button class="btn-class">Paladino</button></td>
+                            <td><button class="btn-class">Atirador</button></td>
+                            <td><button class="btn-class">Guerreiro</button></td>
+                            <td><button class="btn-class">Barbaro</button></td>
+                            <td><button class="btn-class">Arqueiro</button></td>
                         </tr>
                     </tfoot>
+                    
                 </table>
                 
             </article>
@@ -96,14 +104,14 @@
         <section id="section-customize-character">
             <h1>Personalização</h1>
             <p>Aqui você pode personalizar as caracteristicas fisicas do seu personagem</p>
-                <figure>
+                <figure id="hairColor">
                     <img src="assets/images/hair-red.jpg" id="hair-red" alt="hair red">
                     <img src="assets/images/hair-white.jpg" id="hair-white" alt="hair white">
                     <img src="assets/images/hair_green.jpg" id="hair-green" alt=" hair green">
-                 <figcaption>Aqui estão alguns estilos de cabelos que podem ser escolhidos</figcaption>claro
+                 <figcaption>Aqui estão alguns estilos de cabelos que podem ser escolhidos</figcaption>
                 </figure>
                 <div class="eyesSelect">
-                    <figure>
+                    <figure >
                         <img class="img-choose-eyes" src="assets/images/eyes.jpg" alt="">
                         <figcaption>Aqui estão alguns estilos de olhos que podem ser escolhidos</figcaption>
                     </figure>
@@ -114,19 +122,35 @@
                         <option value="hazel">Olhos Castanhos Claros</option>
                     </select>
                 </div>
-                <select name="skinColor" id="skinColor">
-                    <option value="white">Branco</option>
-                    <option value="black">Negro</option>
-                    <option value="brown">Pardo</option>
-                </select>
+                <div class="skinSelect">
+                    <select name="skinColor" id="skinColor">
+                        <option value="white">Branco</option>
+                        <option value="black">Negro</option>
+                        <option value="brown">Pardo</option>
+                    </select>
+                </div>
             
-                <select name="weaponsAvailable" id="weaponsAvailable"></select>
-                <span>As armas disponiveis só serão exibidas apos a seleção da classe</span>
-                    <!-- adicionado via javascript, depende da classe escolhida pelo usuario  -->
+                <div class="weaponsSelect">
+                    <select id="selectWeapons" name="weaponsAvailable"></select>
+                    <span>As armas disponiveis só serão exibidas apos a seleção da classe</span>
+                        <!-- adicionado via javascript, depende da classe escolhida pelo usuario  -->
+                </div>
+                <div class="mountSelect">
+                    <select id="selectMount" name="mount" >
+                        <option value="panda">Panda</option>
+                        <option value="horse">Cavalo</option>
+                        <option value="dragon">Dragão</option>
+                        <option value="unicorn">Unicornio</option>
+                        <option value="bear">Urso</option>
+                    </select>
+                </div>
+                <button onclick="handleClickShowInfos(event)">Finalizar</button>
         </section>
     </main>
     <footer>
         <p>desenvolvido por Hevellyn Oshiro</p>
     </footer>
 </body>
+
+<script src="homePage.js"></script>
 </html>

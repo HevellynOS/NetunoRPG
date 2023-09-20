@@ -71,6 +71,9 @@ const handleClickRegister = (e) => {
     .then(response => {
         if (response.ok) {
             alert('User data saved successfully!');
+            
+            localStorage.setItem('userName', name);
+
             window.location.href = 'loginForm.html';
             
         } else {
